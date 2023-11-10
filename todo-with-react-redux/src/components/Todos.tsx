@@ -3,8 +3,10 @@ import { deleteTodo } from "../store/todoSlice";
 import { RootState } from "../types";
 
 export default function Todos() {
-  const todos = useSelector((state: RootState) => state.todos);
+  // Importing Selector causes rerender on state change
+  const todos = useSelector((state: RootState) => state.todos.todos);
 
+  // Importing and calling Dispatch DOES NOT causes rerender
   const dispatch = useDispatch();
 
   return (
