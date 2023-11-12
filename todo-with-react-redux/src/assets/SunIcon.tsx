@@ -1,9 +1,9 @@
-export default function SunIcon() {
+export default function SunIcon({ color = "black" }) {
   return (
     <svg
-      stroke="currentColor"
-      fill="currentColor"
-      stroke-width="0"
+      stroke={color}
+      fill={color}
+      stroke-width="1"
       viewBox="0 0 16 16"
       height="1em"
       width="1em"

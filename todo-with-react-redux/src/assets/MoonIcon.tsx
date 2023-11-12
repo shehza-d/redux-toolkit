@@ -1,8 +1,8 @@
-export default function MoonIcon() {
+export default function MoonIcon({ color = "black" }) {
   return (
     <svg
-      stroke="currentColor"
-      fill="currentColor"
+      stroke={color}
+      fill={color}
       stroke-width="0"
       viewBox="0 0 16 16"
       height="1em"

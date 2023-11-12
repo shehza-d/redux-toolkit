@@ -5,6 +5,7 @@
 /node_modules
 node_modules/
 **/node_modules/
+**/build/
 jspm_packages/
 /.pnp
 .pnp.js
